@@ -4,8 +4,8 @@ import FormHelperText from '@mui/material/FormHelperText';
 import { useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { API } from "./API";
-import CierpaInputCheckBox from './components/CierpaInputCheckBox';
-import CierpaInputText from "./components/CierpaInputText";
+import InputCheckBox from './components/InputCheckBox';
+import InputText from "./components/InputText";
 import data from './data/questions1.json';
 
 
@@ -74,7 +74,7 @@ const InputForm = () => {
                   control={control}
                   rules={{ maxLength: 100 }}
                   render={({ field: { value, onChange, onBlur } }) => (
-                    <CierpaInputText
+                    <InputText
                       id={item.id}
                       inputTitle={item.questionTitle}
                       inputContents={item.questionSentence}
@@ -100,7 +100,7 @@ const InputForm = () => {
                   control={control}
                   rules={{ maxLength: 100 }}
                   render={({ field: { value, onChange, onBlur } }) => (
-                    <CierpaInputCheckBox
+                    <InputCheckBox
                       id={item.id}
                       inputTitle={item.questionTitle}
                       inputContents={item.questionSentence}

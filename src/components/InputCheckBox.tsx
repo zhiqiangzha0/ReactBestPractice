@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import { FiLink2 } from "react-icons/fi";
 
 const _anwsers: string[] = []
-const CierpaInputCheckBox = (props: any) => {
+const InputCheckBox = (props: any) => {
 
   const { id, inputTitle, inputContents, options, onDataRef } = props
 
@@ -109,4 +109,4 @@ const CierpaInputCheckBox = (props: any) => {
   );
 };
 
-export default CierpaInputCheckBox;
+export default InputCheckBox;

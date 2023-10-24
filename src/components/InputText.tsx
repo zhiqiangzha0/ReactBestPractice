@@ -12,7 +12,7 @@ interface Props {
   onChange: (e: ChangeEvent) => void
 }
 
-const CierpaInputText: React.FC<Props> = ({ id, inputTitle, inputContents, onDataRef, maxSize, value, onChange }) => {
+const InputText: React.FC<Props> = ({ id, inputTitle, inputContents, onDataRef, maxSize, value, onChange }) => {
 
 
   const ref = useRef<HTMLInputElement>(null)
@@ -68,4 +68,4 @@ const CierpaInputText: React.FC<Props> = ({ id, inputTitle, inputContents, onDat
   );
 };
 
-export default CierpaInputText;
+export default InputText;
